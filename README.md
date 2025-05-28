@@ -16,7 +16,7 @@
 
   <section class="about">
     <h2>About Me</h2>
-    <p>Im a junior at Mt. Eden High school i am 17 years of age. I never liked coding but that made me realize that its not so bad after all. But I am more intrested in is soccer i've been playing for the last 14 years of my life.</p>
+    <p>Im a junior at Mt. Eden High school i am 17 years of age. I never liked coding, but that made me realize that it's not so bad after all. I didn't mind the coding, but I was more interested in sports more than anything else.</p>
   </section>
 
 <section class="projects">
