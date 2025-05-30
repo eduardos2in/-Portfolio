@@ -20,5 +20,5 @@ The project fetured in my portfolio are:
 - BlackJack: Is a game where you need to beat the dealer by getting a higher card combination without going over 21!
 ## Links
 
-- [GiteHub Repository](https://github.com/Matt2024180/Final-Project)
+- [GiteHub Repository](https://github.com/Mr-Alvarado/Student-Webpages/tree/main/1st-period/eduardo-s)
 - [Live Website](https://matt2024180.github.io/Final-Project/)
