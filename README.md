@@ -21,4 +21,4 @@ The project fetured in my portfolio are:
 ## Links
 
 - [GiteHub Repository](https://github.com/Mr-Alvarado/Student-Webpages/tree/main/1st-period/eduardo-s)
-- [Live Website](https://matt2024180.github.io/Final-Project/)
+- [Live Website](https://eduardos2in.github.io/-Portfolio/)
