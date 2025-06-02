@@ -157,13 +157,13 @@ function collision(){
     }
   }
   if(ballX < deadZone){
-    player2Score += 10;
+    player2Score += 1;
     updateScore();
     createBall();
     return;
   }
   if(ballX > gameWidth - deadZone){
-    player1Score += 10;
+    player1Score += 1;
     updateScore();
     createBall();
     return;
@@ -190,7 +190,13 @@ function collision1(){
     }
   }
   if(ballY > gameHeight - deadZone){
-    player1Score += 10;
+    player2Score += 1;
+    updateScore();
+    createBall1();
+    return;
+  }
+  if(ballY > gameHeight - deadZone){
+    player1Score += 1;
     updateScore();
     createBall1();
     return;
@@ -237,12 +243,38 @@ function changeDirection(event){
             break;
     }
 }
-function updateScore(){
-  
+function updateScore() {
+    const scoreDisplay = document.querySelector("#scoreDisplay");
+    if (scoreDisplay) {
+        scoreDisplay.textContent = `Player 1: ${player1Score} | Player 2: ${player2Score}`;
+    }
+
+    if (player1Score >= 10 || player2Score >= 10) {
+        clearTimeout(intervalID);
+        clearTimeout(intervalID1);
+
+        window.removeEventListener('keydown', changeDirection);
+        window.removeEventListener('keydown', startGame);
+
+        if (player1Score >= 10) {
+            scoreDisplay.textContent = "Player 1 wins! Press Enter to restart.";
+        } else {
+            scoreDisplay.textContent = "Player 2 wins! Press Enter to restart.";
+        }
+        window.addEventListener('keydown', restartGame);
+    }
 }
+
+function restartGame(e) {
+    if (e.keyCode === 13) { // Enter key
+        window.removeEventListener('keydown', restartGame);
+        resetGame();
+    }
+}
+
 function optionInPlayer(eve){
   const opt = document.querySelector("#startGame");
-  opt.textContent = "Press 1 for 1 player and 2 for 2 players"; 
+  opt.textContent = "Press 1 for 1 player and 2 for 2 players";
   const keyOption = eve.keyCode;
   const num1 = 49;
   const num2 = 50;
