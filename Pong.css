@@ -1,11 +1,11 @@
 body{
-  background: black; 
+  background: black;
   color: white;
   text-align: center;
 }
 h1{
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  text-align: center; 
+  text-align: center;
   font-size: 30px;
 }
 
@@ -27,4 +27,5 @@ h1{
 #pongCanvas{
   border: solid;
 }
+
 
